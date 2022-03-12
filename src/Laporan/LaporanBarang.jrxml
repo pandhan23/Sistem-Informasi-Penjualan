@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="462d5e71-7c32-434a-b13b-9fd9278edbb7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[Select * from barang;]]>
+	</queryString>
+	<field name="id_barang" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_barang" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="merek" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stok" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_k" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="148" splitType="Stretch">
+			<image>
+				<reportElement x="113" y="0" width="146" height="104" uuid="767ccce8-4ce7-42d7-9565-9c137ec9a5aa"/>
+				<imageExpression><![CDATA["D:\\Project\\src\\Laporan\\mdr.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="316" y="33" width="305" height="41" uuid="4de05be6-ca4a-491d-8c8b-c118634d5387"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[          Jalan Garuda No.2, Pasir Gunung Selatan
+      Kecamatan Cimanggis, Kota Depok, Jawa Barat ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="74" width="201" height="20" uuid="83db0a02-b250-40bf-8a8a-cfe531a7f24e"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[           Telp. 0821-2371-8816]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="0" width="225" height="33" uuid="4cd1e5e7-0129-4ec8-8146-b7bb426c8041"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[          Toko MD Jaya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="213" y="116" width="305" height="28" uuid="7889e2a5-9964-43d9-a89c-b6d5090f9a5e"/>
+				<textElement textAlignment="Justified">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[               Laporan Barang ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="21" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="14" width="100" height="20" uuid="5d4a4b77-252b-4d89-936b-6ffbffc601de"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Id Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="14" width="100" height="20" uuid="67e56181-6f89-4738-8e3e-bf1a4a40d78e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="14" width="100" height="20" uuid="70dc3bb6-236d-415f-973b-9ba22e1bc0a2"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[  Merek]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="338" y="14" width="100" height="20" uuid="a9b3626b-1a06-4ef5-bccf-2d7773a4a31d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jenis]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="14" width="100" height="20" uuid="ef500584-b324-4bc5-a0c9-cc2cce042343"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="545" y="14" width="100" height="20" uuid="12c4cbf6-8acc-4d74-8025-660e93b58957"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Stok]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="645" y="14" width="100" height="20" uuid="5984eb88-57a5-4f56-a266-74e432e77ff0"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tanggal Kadaluarsa]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="33" width="801" height="1" uuid="ed2a1fe3-3762-4682-a61c-9a3cd8a2ff83"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="feca8904-ad79-4370-b304-f938a4545df7"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="113" y="0" width="100" height="20" uuid="5b9e7703-508c-4218-a0cb-34a853b83e64"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_barang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="226" y="0" width="100" height="20" uuid="0dd5cd8b-445d-4d9a-8c14-0487be1a59d5"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{merek}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="338" y="0" width="100" height="20" uuid="050a232a-c5be-4dd8-a023-2b1427a0c11e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jenis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="0" width="100" height="20" uuid="e0314d4d-5a1a-4109-bfd5-322e18011aef"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="545" y="0" width="100" height="20" uuid="c0225a4f-b959-466c-b388-dceac2bce343"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{stok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="620" y="0" width="174" height="20" uuid="55c1d13c-d690-4d46-bc90-6ddd880c51ab"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id")).format($F{tanggal_k})]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="250" splitType="Stretch">
+			<textField>
+				<reportElement x="326" y="227" width="100" height="20" uuid="a2d2531d-9d2e-400f-887c-c02904302027"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Halaman "+$V{PAGE_NUMBER}+" dari"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="645" y="86" width="100" height="20" uuid="4fa899cd-1fce-4779-a0c0-f96a93214246"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[    Mengetahui]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="645" y="193" width="100" height="20" uuid="fd621d4d-c414-4715-90b5-1eb40c652e63"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[    Pemilik Toko]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="408" y="227" width="43" height="20" uuid="fae7b5c4-9e40-458d-93f0-b5eeb21ba00d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="645" y="66" width="149" height="20" uuid="0f394311-760f-4775-8ae9-1fdab166487e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="7" splitType="Stretch"/>
+	</summary>
+</jasperReport>

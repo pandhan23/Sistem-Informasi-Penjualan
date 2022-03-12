@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6b804463-16d8-4754-956c-375a4947391d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="10"/>
+	<queryString>
+		<![CDATA[select* from supplier;]]>
+	</queryString>
+	<field name="id_supplier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_supplier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_telp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<image>
+				<reportElement x="49" y="0" width="145" height="99" uuid="7b18e217-569a-424d-a225-28e630b1a7de"/>
+				<imageExpression><![CDATA["mdr.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="256" y="0" width="199" height="34" uuid="4240cdd7-ef56-4093-9c02-88175c8668bc"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[      Toko MD Jaya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="194" y="34" width="331" height="41" uuid="a05f5e5d-cd9d-42ee-b05e-334938f38bec"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[          Jalan Garuda No.2, Pasir Gunung Selatan
+      Kecamatan Cimanggis, Kota Depok, Jawa Barat ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="238" y="75" width="207" height="20" uuid="f8cd9dab-9f8d-4c2e-bff6-549c1e586c02"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[            Telp. 0821-2371-8816]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="123" splitType="Stretch">
+			<staticText>
+				<reportElement x="179" y="12" width="190" height="34" uuid="ea294bfb-ca05-4fcc-bdf2-66b9047cc29b"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Laporan Supplier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="95" width="100" height="20" uuid="81db1b26-3c60-4803-8d00-91762b51bf35"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Id Supplier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="125" y="95" width="100" height="20" uuid="b4bccffb-1b88-4ae8-9576-f706e7d4c775"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Supplier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="256" y="95" width="100" height="20" uuid="ab99cc88-9aa9-43ba-93ec-77e936bd1319"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="95" width="100" height="20" uuid="849c8653-921d-4834-aa1a-55199dd0609b"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="122" width="555" height="1" uuid="c7d2942d-f9c2-47f9-a47c-48d2bef545b8"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="dc37fb35-8e71-4142-8a65-54fc79196158"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="11" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="70010f12-0f7a-4c95-b518-10a47ac7fbff"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_supplier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="125" y="0" width="100" height="20" uuid="1d39e18b-f5f0-4e9d-b73f-8711fad5b6f1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_supplier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="256" y="0" width="100" height="20" uuid="b7b39754-45e4-424b-b2d7-00af77ff241e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{no_telp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="407" y="0" width="100" height="20" uuid="e9500947-4316-4c14-80ca-5ffc06e417e8"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="15" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="226" splitType="Stretch">
+			<textField>
+				<reportElement x="421" y="0" width="134" height="20" uuid="9a1cbddd-6e6a-40ca-95c4-6c1bb8ed7b49"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE, dd MMMM yyyy", new java.util.Locale("id")).format(new java.util.Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="421" y="21" width="100" height="20" uuid="7341e0ff-d11c-4817-90f3-87d0a1d5e5c1"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[    Mengetahui]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="421" y="135" width="100" height="20" uuid="1d637bb6-6db5-4f58-81e7-a98f3fd51258"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[    Pemilik Toko]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="214" y="206" width="104" height="20" uuid="cfd9cd73-c236-4d79-9ec3-038057858894"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Halaman "+$V{PAGE_NUMBER}+" dari"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="301" y="206" width="43" height="20" uuid="eb5d2ef6-35d4-491c-9f02-cdd7749e4bde"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
